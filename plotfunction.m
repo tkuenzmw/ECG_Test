@@ -6,6 +6,8 @@ end
 
 figureHandle = figure();
 
+HR = heartRateEstimator(ecgData);
+
 subplot(2,3,1:3)
 [time, signal] = getNormedEcgRange(ecgData,0,60);
 makeSubplot(time, signal, "Estimated HR=" + num2str(HR) + "bpm");
