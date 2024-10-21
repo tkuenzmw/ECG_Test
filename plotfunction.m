@@ -8,7 +8,7 @@ figureHandle = figure();
 
 subplot(2,3,1:3)
 [time, signal] = getNormedEcgRange(ecgData,0,60);
-makeSubplot(time, signal, "All ECG data");
+makeSubplot(time, signal, "Estimated HR=" + num2str(HR) + "bpm");
 
 subplot(2,3,4);
 [time, signal] = getNormedEcgRange(ecgData,0,5);
