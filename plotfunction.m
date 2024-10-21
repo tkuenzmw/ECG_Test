@@ -33,7 +33,7 @@ normSignal = normSignal - mean(normSignal);
 end
 
 function makeSubplot(time, signal, titleText)
-plot(time, signal);
+plot(time, signal, "k");
 xlabel("Time (s)")
 ylabel("Signal (norm.)")
 title(titleText)
